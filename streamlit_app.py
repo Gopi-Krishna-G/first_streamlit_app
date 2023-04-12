@@ -23,5 +23,4 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 
 #normalize the above json
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)fruityvice_nm =pandas.json_normalize(fruityvice_response.json())
+streamlit.dataframe(fruityvice_normalized)
